@@ -47,3 +47,54 @@ p {
 .section-m1 {
   margin: 2.5rem 0;
 }
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 5rem;
+  background-color: #e3e6f3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.navbar li {
+  list-style: none;
+  position: relative;
+}
+
+.navbar li a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: color 0.3s;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  color: #088178;
+}
+
+.navbar li a::before {
+  content: "";
+  width: 50%;
+  height: 2px;
+  background-color: #088178;
+  position: absolute;
+  bottom: -4px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.navbar li a.active::before,
+.navbar li a:hover::before {
+  opacity: 1;
+}
