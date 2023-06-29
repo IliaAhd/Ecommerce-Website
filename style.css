@@ -31,7 +31,7 @@ h4 {
 
 h6 {
   font-weight: 700;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 p {
@@ -134,4 +134,58 @@ p {
   cursor: pointer;
   font-weight: 700;
   font-size: 1.3rem;
+}
+
+/* Featurs Section */
+.feature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature .feature-box {
+  width: 11.25rem;
+  text-align: center;
+  padding: 1.56rem 1rem;
+  box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  margin: 1rem 0;
+  transition: box-shadow 0.3s;
+}
+
+.feature .feature-box:hover {
+  box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+
+.feature .feature-box img {
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+
+.feature .feature-box h6 {
+  display: inline-block;
+  padding: 0.5625rem 0.5rem 0.375rem 0.5rem;
+  line-height: 1;
+  border-radius: 4px;
+  color: #088178;
+  background-color: #fddde4;
+  font-weight: 500;
+}
+
+.feature .feature-box:nth-child(2) h6 {
+  background-color: #cdebbc;
+}
+.feature .feature-box:nth-child(3) h6 {
+  background-color: #f1e8f2;
+}
+.feature .feature-box:nth-child(4) h6 {
+  background-color: #cdd4f8;
+}
+.feature .feature-box:nth-child(5) h6 {
+  background-color: #f6dbf6;
+}
+.feature .feature-box:nth-child(6) h6 {
+  background-color: #fff2e5;
 }
