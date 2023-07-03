@@ -378,3 +378,44 @@ button.white {
   background-color: #088178;
   border: 1px solid #088178;
 }
+
+.banner3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+}
+
+.banner3 .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("img/banner/b7.jpg");
+  background-size: cover;
+  background-position: center;
+  min-width: 30%;
+  height: 30vh;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.banner3 .banner-box2 {
+  background-image: url("img/banner/b4.jpg");
+}
+
+.banner3 .banner-box3 {
+  background-image: url("img/banner/b18.jpg");
+}
+
+.banner3 h2 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+.banner3 h3 {
+  color: #ec544e;
+  font-weight: 800;
+  font-size: 1rem;
+}
