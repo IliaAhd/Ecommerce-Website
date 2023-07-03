@@ -419,3 +419,52 @@ button.white {
   font-weight: 800;
   font-size: 1rem;
 }
+
+/* Sign Up */
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-image: url("img/banner/b14.png");
+  background-position: 20% 30%;
+  background-repeat: no-repeat;
+  background-color: #041e42;
+}
+
+.newsletter .newstext h4 {
+  color: #fff;
+}
+
+.newsletter .newstext p {
+  color: #818ea0;
+}
+
+.newsletter .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletter .form input {
+  width: 20rem;
+  height: 3rem;
+  border-radius: 5px 0 0 5px;
+  padding-left: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+}
+
+.newsletter .form input::placeholder {
+  color: #a8a8a8;
+}
+
+.newsletter .form button {
+  background-color: #088178;
+  color: #fff;
+  border: none;
+  border-radius: 0px 5px 5px 0;
+  font-size: 1.1rem;
+}
