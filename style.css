@@ -128,6 +128,14 @@ button.white {
   opacity: 1;
 }
 
+.mobile {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
 /* Hero Section */
 .hero {
   background-image: url("img/hero4.png");
@@ -531,4 +539,59 @@ footer a:hover {
 footer .copyright {
   width: 100%;
   text-align: center;
+}
+
+/* Mobile version */
+@media (max-width: 50em) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 18.75rem;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 5rem 0 0 2rem;
+    transition: 0.3s;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile i {
+    color: #1a1a1a;
+    font-size: 2rem;
+    padding-left: 2.5rem;
+    cursor: pointer;
+  }
+
+  .close {
+    display: inline;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #222;
+    font-size: 2rem;
+  }
+
+  .lg-bag {
+    display: none;
+  }
+}
+
+@media (max-width: 30em) {
+  .header {
+    padding: 1.25rem 0.9rem;
+  }
 }
